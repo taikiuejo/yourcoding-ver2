@@ -1,0 +1,63 @@
+/******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+// メインタイトル
+.main-title {
+  font-size: 32px;
+}
+
+.main-visual {
+  background:none;
+  &__inner {
+    flex-direction: row;
+  }
+  &__bg-img{
+    display: block;
+    position: absolute;
+    top:-30%;
+    right: -30%;
+    z-index: -10;
+  }
+}
+.feature {
+  &__list-item {
+    &__description {
+      width: 50%;
+    }
+  }
+}
+
+.blog {
+  .cards {
+    flex-direction: row;
+    &__item {
+      flex-basis: 47%;
+      margin-bottom: 6%;
+    }
+  }
+  .card {
+    background-color: $White;
+    flex-direction: column;
+    &__body {
+      padding: 1rem;
+    }
+  }
+}
+
+.works {
+  &__inner {
+    width: 100%;
+  }
+}
+
+.footer{
+  &__ul {
+    flex-direction: row;
+    
+  }
+  &__li {
+    margin-right: 30px;
+  }
+}

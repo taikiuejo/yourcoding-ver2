@@ -1,0 +1,90 @@
+/******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+.global-nav {
+  display: block;
+}
+
+.humberger-menu {
+  display: none;
+}
+
+.sp-nav {
+  display: none;
+}
+
+.main-visual {
+  &__inner {
+    flex-direction: row;
+  }
+  &__bg-img{
+    right: -10%;
+  }
+}
+
+.feature {
+  &__list-item {
+    flex-direction: row;
+    flex-wrap: wrap;
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+    &__title {
+      flex-basis: 100%;
+    }
+    &__img {
+      flex-basis: 47%;
+    }
+    &__description {
+      flex-basis: 47%;
+    }
+  }
+}
+
+.price {
+  &__table {
+    &__header {
+      border-right: 1px solid $border;
+      display: table-cell;
+      width: 30%;
+    }
+    &__text {
+      display: table-cell;
+      text-align: left;
+      padding-left: 40px;
+    }
+  }
+}
+
+.blog {
+  .cards {
+    max-width: 1280px;
+    margin: 0 auto;
+    &__item {
+      flex-basis: 31.707%;
+      max-width: 389px;
+    }
+  }
+}
+.card {
+  background-color: $White;
+
+  flex-direction: column;
+
+  &__body {
+    padding: 1rem;
+  }
+  &__title {
+    font-size: 18px;
+  }
+}
+
+.contact {
+  .form {
+    &__input {
+      min-height: 45px;
+    }
+  }
+}

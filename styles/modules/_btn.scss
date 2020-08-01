@@ -1,0 +1,16 @@
+.btn {
+  display: inline-block;
+  padding: 10px 50px;
+  text-align: center;
+  color: $White;
+  border-radius: 10px;
+  background: transparent linear-gradient(90deg, #fa41cc 0%, #6020b0 100%) 0 0
+    no-repeat padding-box;
+  box-shadow: 0 3px 6px #00000029;
+  font-weight: 400;
+  vertical-align: middle;
+  font-size: 14px;
+  &:hover {
+    color: $White;
+  }
+}

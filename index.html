@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- リセットCSSここから -->
+    <link rel="stylesheet" href="styles/vendors/reset.css" />
+    <!-- リセットCSSここまで -->
+    <!-- googlefontsここから -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google fontsここまで -->
+
+    <!-- aos.cssここから  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- aos.cssここまで  -->
+
+    <!-- swiper.cssここから -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- swiper.cssここまで -->
+
+    <!-- スタイルシートここから -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- スタイルシートここまで -->
+
+    <!-- jquery CDNここから-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- jquery CDNここまで -->
+
+    <!-- Ajax　CDNここから -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Ajax　CDNここまで -->
+
+    <!-- aos.js CDNここから-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- aos.js CDNここまで -->
+
+    <!-- global-menu.jsここから-->
+    <script src="scripts/libs/global-menu.js"></script>
+    <!-- global-menu.jsここまで -->
+
+    <!-- アコーディオンここから -->
+    <script src="scripts/libs/accordion.js"></script>
+    <!-- アコーディオンここまで -->
+
+    <!-- smooth scroll.jsここから-->
+    <script src="scripts/libs/smooth-scroll.js"></script>
+    <!-- smooth scroll.jsここまで -->
+
+    <!-- contact.jsここから -->
+    <script src="scripts/libs/contact.js"></script>
+    <!-- contact.jsここから -->
+  </head>
+  <body>
+    <!-- ヘッダーここから -->
+    <header class="header">
+      <div class="header__inner">
+        <a class="header__title-wrapper" href="#">
+          <img class="header__logo" src="images/logo.png" alt="" />
+          <h1 class="header__title">
+            ユアコーディング
+          </h1>
+        </a>
+        <!-- PCメニュー -->
+        <nav class="global-nav">
+          <div class="global-nav__inner">
+            <ul class="global-nav__list">
+              <li class="global-nav__list-item">
+                <a class="global-nav__link" href="#feature">特徴</a>
+              </li>
+              <li class="global-nav__list-item">
+                <a class="global-nav__link" href="#price">価格</a>
+              </li>
+              <li class="global-nav__list-item">
+                <a class="global-nav__link" href="#contact">お問い合わせ</a>
+              </li>
+            </ul>
+            <a class="global-nav__contact btn" href="#contact">お問い合わせ</a>
+          </div>
+        </nav>
+        <div class="humberger-menu js-humberger-menu">
+          <button class="humberger-menu__btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+      <!-- スマホメニュー -->
+      <div class="sp-nav js-global-nav">
+        <ul class="sp-nav__list">
+          <li class="sp-nav__list-item">
+            <a class="sp-nav__link header-link" href="#feature">特徴</a>
+          </li>
+          <li class="sp-nav__list-item">
+            <a class="sp-nav__link header-link" href="#price">価格</a>
+          </li>
+          <li class="sp-nav__list-item">
+            <a class="sp-nav__link header-link" href="#contact">お問い合わせ</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- ヘッダーここまで -->
+
+    <!-- メインコンテンツここから -->
+    <main>
+      <!-- メインビジュアル ここから-->
+      <section class="main-visual">
+        <div class="main-visual__bg-img">
+          <img src="images/circle.png" alt="">
+        </div>
+        <div class="main-visual__inner">
+          <div class="main-visual__description">
+            <h1 class="main-title description__title">
+              コーディングの手間を<br />
+              最小に、デザインに注力<br />
+              する助けに
+            </h1>
+            <p class="description__txt">
+              ユアコーディングはコーディングに<br />
+              特化したフリーランス<br />
+              デザインに注力されたい方の<br />
+              助けになります
+            </p>
+            <a class="description__btn btn" href="#contact">お問い合わせ</a>
+          </div>
+          <div class="main-visual__img">
+            <img src="images/main.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- メインビジュアル ここまで-->
+
+      <!-- 特徴 ここから-->
+      <section id="feature" class="feature">
+        <div class="feature__inner">
+          <div class="feature__title">
+            <h2 class="main-title">ユアコーディング3つの特徴</h2>
+            <span class="sub-title">FEATURE</span>
+          </div>
+          <ul class="feature__list">
+            <li
+              class="feature__list-item"
+              data-aos="fade-up"
+              data-aos-duration="700"
+              data-aos-delay="200"
+              data-aos-once="true"
+            >
+              <h3 class="feature__list-item__title title">高速コーディング</h3>
+              <div class="feature__list-item__img">
+                <img src="images/feature01.png" alt="" />
+              </div>
+              <div class="feature__list-item__description">
+                <p class="feature__list-item__description--large">
+                  コーディングに特化したフリーランスのため、スピード感を持った開発が可能。
+                </p>
+                <p>
+                  開発は常にスピードとの勝負です。
+                  ユアコーディングはコーディングに特化しているため、
+                  素早く納品することで、クライアントがデザインに注力する助けとなります。
+                </p>
+              </div>
+            </li>
+            <li
+              class="feature__list-item"
+              data-aos="fade-up"
+              data-aos-duration="700"
+              data-aos-delay="200"
+              data-aos-once="true"
+            >
+              <h3 class="feature__list-item__title">高品質</h3>
+              <div class="feature__list-item__img">
+                <img src="images/feature02.png" alt="" />
+              </div>
+              <div class="feature__list-item__description">
+                <p class="feature__list-item__description--large">
+                  正しいマークアップで、内部SEOに強いコーディングをデフォルトで行います。
+                </p>
+                <p>
+                  ユアコーディングでは、「予測しやすい」「再利用しやすい」「保守しやすい」「拡張しやすい」と言った設計をもとにきちんとコーディングを行うため、納品後も安心です。
+                </p>
+              </div>
+            </li>
+            <li
+              class="feature__list-item"
+              data-aos="fade-up"
+              data-aos-duration="700"
+              data-aos-delay="200"
+              data-aos-once="true"
+            >
+              <h3 class="feature__list-item__title title">迅速なレスポンス</h3>
+              <div class="feature__list-item__img">
+                <img src="images/feature03.png" alt="" />
+              </div>
+              <div class="feature__list-item__description">
+                <p class="feature__list-item__description--large">
+                  原則いただいたメッセージは、業務時間内であれば6時間以内にお返しいたします。
+                </p>
+                <p>
+                  連絡を返さないフリーランスが多い中、ユアコーディングでは定期的な進捗報告など、社会人としての基本を踏まえて仕事を行なっております。
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- 特徴 ここまで-->
+
+      <!-- 価格 ここから-->
+      <section id="price" class="price">
+        <div class="price__inner">
+          <div
+            class="price__title"
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-duration="700"
+          >
+            <h2 class="main-title">価格</h2>
+            <span class="sub-title">PRICE</span>
+          </div>
+          <div
+            class="price__table"
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-duration="700"
+            data-aos-delay="200"
+          >
+            <table class="price__table__inner">
+              <tbody class="price__table__body">
+                <tr class="price__table__row">
+                  <th class="price__table__header">
+                    HTMLコーディングトップページ
+                  </th>
+                  <td class="price__table__text">30.000円〜</td>
+                </tr>
+                <tr class="price__table__row">
+                  <th class="price__table__header">
+                    HTMLコーディングトップページ
+                  </th>
+                  <td class="price__table__text">30.000円〜</td>
+                </tr>
+                <tr class="price__table__row">
+                  <th class="price__table__header">
+                    HTMLコーディングトップページ
+                  </th>
+                  <td class="price__table__text">30.000円〜</td>
+                </tr>
+                <tr class="price__table__row">
+                  <th class="price__table__header">
+                    HTMLコーディングトップページ
+                  </th>
+                  <td class="price__table__text">30.000円〜</td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- <dl class="price__table__inner">
+              <dt class="price__table__header">
+                HTMLコーディングトップページ
+              </dt>
+              <dd class="price__table__text">
+                30.000円〜
+              </dd>
+              <dt class="price__table__header">
+                HTMLコーディングトップページ
+              </dt>
+              <dd class="price__table__text">
+                30.000円〜
+              </dd>
+              <dt class="price__table__header">
+                HTMLコーディングトップページ
+              </dt>
+              <dd class="price__table__text">
+                30.000円〜
+              </dd>
+              <dt class="price__table__header">
+                HTMLコーディングトップページ
+              </dt>
+              <dd class="price__table__text">
+                30.000円〜
+              </dd>
+            </dl> -->
+          </div>
+          <p class="price__description">
+            ＊詳細な価格はページや仕様によって異なります
+          </p>
+        </div>
+      </section>
+      <!-- 価格 ここまで-->
+
+      <!-- よくある質問 ここから-->
+      <section id="faq" class="faq">
+        <div class="faq__inner">
+          <div
+            class="faq__title title"
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-duration="700"
+          >
+            <h2 class="main-title">よくある質問</h2>
+            <span class="sub-title">FAQ</span>
+          </div>
+          <div
+            class="accordion-wrapper"
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-duration="700"
+            data-aos-delay="200"
+          >
+            <dl class="accordion">
+              <dt class="accordion__title js-accordion__title">
+                <p class="accordion__btn">
+                  デザインから一貫してお願いすることは可能でしょうか
+                </p>
+              </dt>
+              <dd class="accordion__body js-accordion__body">
+                <p class="accordion__text">
+                  ユアコーディングはコーディングに特化したサービスですので、デザインからお受けすることは基本的にありません。
+                  ただデザインを行う際は提携しているデザイナーと連携して対応させていただきますので、別途ご連絡ください。
+                </p>
+              </dd>
+            </dl>
+            <dl class="accordion">
+              <dt class="accordion__title js-accordion__title">
+                <p class="accordion__btn">
+                  WordPressのカスタマイズをお願いすることも可能でしょうか？
+                </p>
+              </dt>
+              <dd class="accordion__body js-accordion__body">
+                <p class="accordion__text">
+                  可能です。ただECサイトなどの場合は構築難易度や工数の関係で綿密にヒアリングさせていただきたく思います。
+                </p>
+              </dd>
+            </dl>
+            <dl class="accordion">
+              <dt class="accordion__title js-accordion__title">
+                <p class="accordion__btn">
+                  コーディングのスピード感が知りたい
+                </p>
+              </dt>
+              <dd class="accordion__body js-accordion__body">
+                <p class="accordion__text">
+                  HTMLレスポンシブ込み5ページで1週間、10ページで2週間、WordPressサイト5ページで2週間、10ページで3週間が目安に
+                  なります。
+                </p>
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </section>
+      <!-- よくある質問 ここまで-->
+
+      <!-- ブログ ここから-->
+      <section id="blog" class="blog">
+        <div class="blog__inner">
+          <div
+            class="blog__title"
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-duration="700"
+          >
+            <h2 class="main-title">ブログ</h2>
+            <span class="sub-title">BLOG</span>
+          </div>
+          <div class="cards">
+            <div
+              class="card cards__item"
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-duration="700"
+              data-aos-delay="200"
+            >
+              <figure class="card__img-wrapper">
+                <img
+                  class="card__img"
+                  src="images/austin-distel-wawEfYdpkag-unsplash.png"
+                  alt=""
+                />
+              </figure>
+              <div class="card__body">
+                <h3 class="card__title">
+                  サイトをリニューアルオープンしました。
+                </h3>
+              </div>
+              <div class="card__date">
+                2020.01.23
+              </div>
+            </div>
+            <div
+              class="card cards__item"
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-duration="700"
+              data-aos-delay="200"
+            >
+              <figure class="card__im g-wrapper">
+                <img
+                  class="card__img"
+                  src="images/dylan-gillis-KdeqA3aTnBY-unsplash.png"
+                  alt=""
+                />
+              </figure>
+              <div class="card__body">
+                <h3 class="card__title">
+                  WebサイトでSEO内部施策に適したコー
+                  ディングでどれぐらいサイトが早くなるの か検証してみました
+                </h3>
+              </div>
+              <div class="card__date">
+                2020.01.24
+              </div>
+            </div>
+            <div
+              class="card cards__item"
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-duration="700"
+              data-aos-delay="200"
+            >
+              <figure class="card__im g-wrapper">
+                <img
+                  class="card__img"
+                  src="images//brooke-cagle-g1Kr4Ozfoac-unsplash.png"
+                  alt=""
+                />
+              </figure>
+              <div class="card__body">
+                <h3 class="card__title">
+                  ユアコーディングではデザイナーの方を広く募集しています。
+                </h3>
+              </div>
+              <div class="card__date">
+                2020.01.25
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ブログ ここまで-->
+
+      <!-- 制作実績 ここから-->
+      <section id="works" class="works">
+        <div class="works__inner">
+          <div
+            class="works__title"
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-duration="700"
+          >
+            <h2 class="main-title">制作実績</h2>
+            <span class="sub-title">WORKS</span>
+          </div>
+          <div
+            class="works__cards"
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-duration="700"
+            data-aos-delay="200"
+          >
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide works__card">
+                  <figure class="works__card__img-wrapper">
+                    <img
+                      class="works__card__img"
+                      src="images/digital-marketing-1433427_1280.png"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="works__card__body">
+                    <h3 class="works__card__title">
+                      株式会社サンプル採用様採用サイトのコーディングを行いました！
+                    </h3>
+                    <div class="works__card__text">
+                      採用技術：Jquery,Bootsrap4<br />
+                      実装期間：２週間<br />
+                      担当コーダー：石井<br />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide works__card">
+                  <figure class="works__card__img-wrapper">
+                    <img
+                      class="works__card__img"
+                      src="images/hal-gatewood-tZc3vjPCk-Q-unsplash.png"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="works__card__body">
+                    <h3 class="works__card__title">
+                      株式会社サンプル採用様採用サイトのコーディングを行いました！
+                    </h3>
+                    <div class="works__card__text">
+                      採用技術：Jquery,Bootsrap4<br />
+                      実装期間：２週間<br />
+                      担当コーダー：石井<br />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide works__card">
+                  <figure class="works__card__img-wrapper">
+                    <img
+                      class="works__card__img"
+                      src="images/digital-marketing-1433427_1280.png"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="works__card__body">
+                    <h3 class="works__card__title">
+                      株式会社サンプル採用様採用サイトのコーディングを行いました！
+                    </h3>
+                    <div class="works__card__text">
+                      採用技術：Jquery,Bootsrap4<br />
+                      実装期間：２週間<br />
+                      担当コーダー：石井<br />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide works__card">
+                  <figure class="works__card__img-wrapper">
+                    <img
+                      class="works__card__img"
+                      src="images/arnel-hasanovic-MNd-Rka1o0Q-unsplash.png"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="works__card__body">
+                    <h3 class="works__card__title">
+                      株式会社サンプル採用様採用サイトのコーディングを行いました！
+                    </h3>
+                    <div class="works__card__text">
+                      採用技術：Jquery,Bootsrap4<br />
+                      実装期間：２週間<br />
+                      担当コーダー：石井<br />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 制作実績 ここまで-->
+
+      <!-- お問い合わせ ここから-->
+      <section id="contact" class="contact">
+        <div class="contact__inner">
+          <div class="contact__title">
+            <h2 class="main-title">お問い合わせ</h2>
+            <span class="sub-title">CONTACT</span>
+          </div>
+          <div class="contact__description">
+            コーディングの人出が足りないとき、<br />
+            あなたの力になります
+          </div>
+          <form class="form-wrapper" id="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeD-5WwbW2YqwzJmgOVK_SP-gXG0UaYztKtQ0Upq1jA3tAMVA/formResponse">
+            <div class="form-wrapper__inner">
+              <div class="form">
+                <div class="form__title">
+                  <label class="form__label label" for="form-name"
+                    >お名前</label
+                  >
+                  <span class="form-required">必須</span>
+                </div>
+                  <input class="form__input" id="form-name" name="entry.2074474688" type="text" required />
+              </div>
+
+              <div class="form">
+                <div class="form__title">
+                  <label class="form__label label" for="form-mail"
+                    >メールアドレス</label
+                  >
+                  <span class="form-required">必須</span>
+                </div>
+                  <input class="form__input" id="form-mail" name="entry.204149612" type="email" required />
+              </div>
+
+              <div class="form">
+                <div class="form__title">
+                  <label class="form__label label" for="form-textarea"
+                    >お問い合わせ内容</label
+                  >
+                  <span class="form-required">必須</span>
+                </div>
+                <textarea
+                  class="form__textarea"
+                  id="form-textarea"
+                  name="entry.442999242"
+                  type="text"
+                  required
+                ></textarea>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check__check-box"
+                  type="checkbox"
+                  id="privacyCheck"
+                  required
+
+                />
+                <label class="form-check__label label" for="privacyCheck"
+                  >プライバシーポリシーに同意する</label
+                >
+              </div>
+              <div class="form-submit-btn">
+                <button type="submit" class="form-submit-btn__btn btn" id="js-submit" disabled>
+                  送信する
+                </button> 
+              </div>
+              <p class="end-message">お問い合わせありがとうございました。</p>
+              <p class="false-message">送信失敗です。</p>
+            </div>
+          </form>
+
+        </div>
+      </section>
+      <!-- お問い合わせ　 -->
+    </main>
+    <!-- メインコンテンツここまで -->
+
+    <!-- フッターここから -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <h3 class="footer__title">
+          <a href="#">ユアコーディング</a></h3>
+        <ul class="footer__ul">
+          <li class="footer__li">
+            <a class="footer__link" href="#1"> プライバシーポリシー</a>
+          </li>
+          <li class="footer__li">
+            <a class="footer__link" href="#2">個人商取引法に基づく表記</a>
+          </li>
+        </ul>
+        <div class="copy-right">
+          &copy;ユアコーディング, All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+    <!-- フッターここまで -->
+
+    
+    
+    <!-- swiper CDNここから -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- swiper CDNここまで -->
+    <!-- swiper.jsここから -->
+    <script src="scripts/libs/swiper.js"></script>
+    <!-- swiper.jsここまで -->
+    <!-- aos.jsここから -->
+    <script src="scripts/libs/aos.js"></script>
+    <!-- aos.jsここまで -->
+    <!-- main.jsここから -->
+    <script src="main.js"></script>
+    <!-- main.jsここまで -->
+  </body>
+</html>
